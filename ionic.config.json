@@ -1,0 +1,7 @@
+{
+  "name": "guias",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

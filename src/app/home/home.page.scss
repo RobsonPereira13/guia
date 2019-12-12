@@ -1,0 +1,52 @@
+.content {
+  --background: linear-gradient(207deg, rgba(226, 139, 29, 1) 0%, rgba(255, 224, 1, 1) 84%);
+  --border-width: 0px;
+  --border-style: none;
+}
+
+ion-item {
+  margin-bottom: 5%;
+}
+
+.btn-init {
+  --background: rgba(0, 142, 244, 1);
+  --border-radius: 10px;
+}
+
+ion-back-button {
+  --icon-font-size: 30px
+}
+
+ion-avatar {
+  width: 65px;
+  height: 65px;
+}
+
+h2 {
+  color: #b2b2b2;
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+
+p {
+  color: #b2b2b2;
+  font-size: 0.9rem;
+}
+
+span {
+  color: #b2b2b2;
+  font-size: 0.8rem;
+}
+
+ion-button {
+  --color: #ccc;
+  // --color: rgba(226, 139, 29, 1);
+}
+
+ion-toolbar {
+  --min-height: 6.8rem;
+}
+
+ion-row {
+  margin-top: 5%
+}

@@ -1,0 +1,121 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+
+    <ion-title>Editar perfil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+<ion-card>
+
+    <ion-list padding>
+
+      <ion-item id="nome">
+        <ion-label position="floating">Nome</ion-label>
+        <ion-input  type="text" [(ngModel)]="user.nome"></ion-input>
+      </ion-item>
+
+      <ion-item id="rounded">
+        <ion-label position="floating">Sobrenome</ion-label>
+        <ion-input type="text" [(ngModel)]="user.sobrenome"></ion-input>
+      </ion-item>
+ 
+      <ion-item id="rounded">
+        <ion-label position="floating">Telefone</ion-label>
+        <ion-input  mask="(00) 0000-00000" maxlength="15" type="phone" [(ngModel)]="user.telefone"></ion-input>
+      </ion-item>
+
+      <ion-item id="rounded">
+        <ion-label position="floating">Cadastur</ion-label>
+        <ion-input type="text" [(ngModel)]="user.cadastur"></ion-input>
+      </ion-item>
+
+      <ion-item id="rounded">
+        <ion-label position="floating">Linguas</ion-label>
+        <ion-input type="text" [(ngModel)]="user.linguas"></ion-input>
+      </ion-item>
+
+      <ion-button  (click)="updateUser()" shape="round" expand="expand" color="success" [routerLink]="['/perfil']">
+        Alterar
+    </ion-button>
+
+    </ion-list>
+
+</ion-card>
+
+</ion-content> -->
+
+<ion-header>
+  <ion-toolbar mode='ios' class="content">
+    <ion-buttons slot="start">
+      <ion-back-button style="color: #fff;"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      <ion-row>
+        <ion-col class="title">
+          Alterar Perfil<br>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="title">
+          <ion-avatar routerLink='/perfil-alterar-foto'>
+            <img [src]="user.foto">
+          </ion-avatar>
+        </ion-col>
+      </ion-row>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-label position='floating'>
+            <b>Nome</b>
+          </ion-label>
+          <ion-input type="text" [(ngModel)]="user.nome"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position='floating'>
+            <b>Sobrenome</b>
+          </ion-label>
+          <ion-input type="text" [(ngModel)]="user.sobrenome"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position='floating'>
+            <b>Telefone</b>
+          </ion-label>
+          <ion-input mask="(00) 0000-00000" maxlength="15" type="phone" [(ngModel)]="user.telefone"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position='floating'>
+            <b>Cadastur</b>
+          </ion-label>
+          <ion-input type="text" [(ngModel)]="user.cadastur"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position='floating'>
+            <b>Línguas</b>
+          </ion-label>
+          <ion-input type="text" [(ngModel)]="user.linguas"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+
+        <ion-button size='large' class="btn-init" expand='block' (click)="updateUser()" shape='round'>
+          Alterar
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

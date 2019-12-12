@@ -1,0 +1,45 @@
+ion-back-button {
+    --icon-font-size: 30px
+}
+
+.title {
+    color: #B2B2B2;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.icon {
+    color: #D2D2D2;
+}
+
+ion-input {
+    --placeholder-color: #D2D2D2
+}
+
+.top {
+    margin-top: 15%;
+    display: flex;
+    justify-content: center;
+}
+
+.top-2 {
+    margin-top: 20%;
+}
+
+.btn-init {
+    --background: #008EF4;
+    --border-radius: 10px;
+}
+
+.btn-fab {
+    --background: #008EF4;
+}
+
+ion-item {
+    margin-top: 10%
+}
+
+ion-thumbnail {
+    --border-radius: 100%;
+    --size: 100%
+}
